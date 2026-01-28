@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                if (rating < 2.5) {
+                if (rating <= 2.5) {
                     tvRatingResult.setText("Słabo");
                     tvRatingResult2.setText("Ocena: " + rating + " / 5");
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
                     tvRatingResult.setTextColor(Color.rgb(255, 165, 0));
                     tvRatingResult2.setTextColor(Color.rgb(255, 165, 0));
-                } else if (rating > 4.0){
+                } else if (rating >= 4.0){
                     tvRatingResult.setText("Super!");
                     tvRatingResult2.setText("Ocena: " + rating + " / 5");
 
