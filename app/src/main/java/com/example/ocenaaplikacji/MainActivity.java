@@ -32,16 +32,19 @@ public class MainActivity extends AppCompatActivity {
                 if (rating < 2.5) {
                     tvRatingResult.setText("Słabo");
                     tvRatingResult2.setText("Ocena: " + rating + " / 5");
+
                     tvRatingResult.setTextColor(Color.RED);
                     tvRatingResult2.setTextColor(Color.RED);
                 } else if (rating > 2.5 && rating < 4.0){
                     tvRatingResult.setText("OK");
                     tvRatingResult2.setText("Ocena: " + rating + " / 5");
+
                     tvRatingResult.setTextColor(Color.rgb(255, 165, 0));
                     tvRatingResult2.setTextColor(Color.rgb(255, 165, 0));
                 } else if (rating > 4.0){
                     tvRatingResult.setText("Super!");
                     tvRatingResult2.setText("Ocena: " + rating + " / 5");
+
                     tvRatingResult.setTextColor(Color.GREEN);
                     tvRatingResult2.setTextColor(Color.GREEN);
                 }
